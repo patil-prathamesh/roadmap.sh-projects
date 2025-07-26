@@ -7,60 +7,58 @@
     <title>Hello</title>
   </head>
   <body>
-    <div class="bg-white m-5 w-[750px] h-[839px] mx-auto border-2">
+    <div class="bg-white m-2 sm:m-5 max-w-[750px]  sm:min-h-[839px] mx-auto border-2 p-4">
       <div>
-        <nav class="flex justify-between">
-          <h1>Prathamesh Patil</h1>
-          <div>
-            <a href="home.html">Home</a>/ 
-            <a href="projects.html">Projects</a>/
-            <a href="articles.html">Articles</a>/
-            <a href="contact.html">Contact</a>
+        <nav class="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 pb-4">
+          <h1 class="text-xl sm:text-2xl font-bold">Prathamesh Patil</h1>
+          <div class="space-x-2">
+            <a href="home.html" class="hover:text-blue-500">Home</a>/ 
+            <a href="projects.html" class="hover:text-blue-500">Projects</a>/
+            <a href="articles.html" class="hover:text-blue-500">Articles</a>/
+            <a href="contact.html" class="hover:text-blue-500">Contact</a>
           </div>
         </nav>
       </div>
       <main>
         <div>
-          <div
-            class="h-[180px] flex justify-center items-center text-4xl border-b"
-          >
-            <h2 class="">Frontend Developer</h2>
+          <div class="h-[120px] sm:h-[180px] flex justify-center items-center text-2xl sm:text-4xl border-b">
+            <h2 class="font-bold">Frontend Developer</h2>
           </div>
-          <div class="grid grid-cols-[190px_1fr_230px] border-b">
-            <div class="border-r">
+          <div class="grid grid-cols-1 md:grid-cols-[190px_1fr_230px] border-b">
+            <div class="border-b md:border-b-0 md:border-r p-4">
               <section>
-                <article>Projects</article>
-                <h3 class="border-b">HTML Only Portfolio</h3>
-                <h3 class="border-b">Calculator</h3>
-                <h3 class="border-b">Quiz App</h3>
-                <h3 class="border-b">Countdown Timer</h3>
-                <h3>Product Upcoming page</h3>
+                <article class="font-semibold mb-4">Projects</article>
+                <h3 class="border-b py-2 hover:text-blue-500 cursor-pointer">HTML Only Portfolio</h3>
+                <h3 class="border-b py-2 hover:text-blue-500 cursor-pointer">Calculator</h3>
+                <h3 class="border-b py-2 hover:text-blue-500 cursor-pointer">Quiz App</h3>
+                <h3 class="border-b py-2 hover:text-blue-500 cursor-pointer">Countdown Timer</h3>
+                <h3 class="py-2 hover:text-blue-500 cursor-pointer">Product Upcoming page</h3>
               </section>
             </div>
-            <div class="">
-              <div class="border-b">
+            <div class="p-4">
+              <div class="border-b pb-4">
                 <article>
-                  <h2>Work Experience</h2>
-                  <h3>ConnectWise</h3>
-                  <p>Workingo on frontend and QA</p>
+                  <h2 class="font-semibold mb-2">Work Experience</h2>
+                  <h3 class="text-lg mb-1">ConnectWise</h3>
+                  <p>Working on frontend and QA</p>
                 </article>
               </div>
-              <div>
+              <div class="pt-4">
                 <article>
-                  <h2>Open Source work</h2>
-                  <h3>Contributed to 5 open Source projects</h3>
+                  <h2 class="font-semibold mb-2">Open Source work</h2>
+                  <h3 class="text-lg">Contributed to 5 open Source projects</h3>
                 </article>
               </div>
             </div>
-            <div class="border-l">
+            <div class="border-t md:border-t-0 md:border-l p-4">
               <article>
-                <h2>Education</h2>
-                <p>
+                <h2 class="font-semibold mb-2">Education</h2>
+                <p class="mb-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
                   laboriosam!
                 </p>
-                <h2>Courses I took:</h2>
-                <ul class="list-disc ml-5">
+                <h2 class="font-semibold mb-2">Courses I took:</h2>
+                <ul class="list-disc ml-5 space-y-1">
                   <li>Lorem ipsum dolor sit amet.</li>
                   <li>Lorem ipsum dolor sit amet.</li>
                   <li>Lorem ipsum dolor sit amet.</li>
@@ -69,26 +67,26 @@
               </article>
             </div>
           </div>
-          <div class="h-[417px] relative">
-            <h2>Reviews from my Teachers</h2>
-            <div class="flex text-[13px] p-6 gap-5">
-                <div class="border rounded-[35px] p-4 w-[300px] h-[140px] ">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, culpa! Cum beatae adipisci ipsum iure.</p>
-                    <p>John Doe</p>
-                    <p>Assistant Professor</p>
+          <div class="min-h-[417px] relative py-6">
+            <h2 class="font-semibold text-xl mb-4 text-center">Reviews from my Teachers</h2>
+            <div class="flex flex-col md:flex-row text-[13px] p-2 sm:p-6 gap-5">
+                <div class="border rounded-[35px] p-4 w-full md:w-[300px] min-h-[140px] hover:shadow-lg transition-shadow">
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, culpa! Cum beatae adipisci ipsum iure.</p>
+                    <p class="font-semibold">John Doe</p>
+                    <p class="text-gray-600">Assistant Professor</p>
                 </div>
-                <div class="border rounded-[35px] p-4 w-[300px] h-[140px]">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, culpa! Cum beatae adipisci ipsum iure.</p>
-                    <p>John Doe</p>
-                    <p>Assistant Professor</p>
+                <div class="border rounded-[35px] p-4 w-full md:w-[300px] min-h-[140px] hover:shadow-lg transition-shadow">
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, culpa! Cum beatae adipisci ipsum iure.</p>
+                    <p class="font-semibold">John Doe</p>
+                    <p class="text-gray-600">Assistant Professor</p>
                 </div>
-                <div class="border rounded-[35px] p-4 w-[300px] h-[140px]">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, culpa! Cum beatae adipisci ipsum iure.</p>
-                    <p>John Doe</p>
-                    <p>Assistant Professor</p>
+                <div class="border rounded-[35px] p-4 w-full md:w-[300px] min-h-[140px] hover:shadow-lg transition-shadow">
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, culpa! Cum beatae adipisci ipsum iure.</p>
+                    <p class="font-semibold">John Doe</p>
+                    <p class="text-gray-600">Assistant Professor</p>
                 </div>
             </div>
-            <h4 class="absolute bottom-0 left-[280px] mb-5">@ all rights reserved 2025</h4>
+            <h4 class="text-center mt-8 text-sm text-gray-500">© all rights reserved 2025</h4>
           </div>
         </div>
       </main>
